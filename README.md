@@ -3,6 +3,8 @@
 ## Documentation for Kentico Form Widget Configuration
 [View Here](https://docs.kentico.com/k12/developing-websites/form-builder-development/customizing-the-form-widget#CustomizingtheFormwidget-Examples)
 
+Adds functionality to Kentico Form Widget Markup to allow injection of a Razor View into the CustomHtmlEnvelope
+
 ## ~/App_Code/FormWidgetMarkupInjection.cs
 
 ```csharp
@@ -27,7 +29,7 @@ public class FormWidgetMarkupInjection
 }
 ```
 
-# ~/Views/Shared/Forms/_(ParialViewByFormName).cshtml
+# ~/Views/Shared/Forms/_PartialView.cshtml
 
 ```csharp
 @using Kentico.Forms.Web.Mvc.Widgets
