@@ -1,5 +1,9 @@
 # Kentico.FormExtensions
 
+## Documentation for Kentico Form Widget Configuration
+[View Here](https://docs.kentico.com/k12/developing-websites/form-builder-development/customizing-the-form-widget#CustomizingtheFormwidget-Examples)
+
+
 ```csharp
 using Kentico.FormExtensions;
 
@@ -20,4 +24,22 @@ public class FormWidgetMarkupInjection
         });
     }
 }
+```
+
+# ~/Views/Shared/Forms/<FormName>.cshtml
+
+```csharp
+@using Kentico.Forms.Web.Mvc.Widgets
+@model CMS.OnlineForms.BizFormInfo
+<section class="form-section contaner">
+    <div class="row align-center">
+        <div class="col-12">
+            <h2>@Model.FormDisplayName</h2>
+        </div>
+        <div class="col-sm-12 col-md-8">
+            <!-- Form -->
+            @(FormWrapperRenderingConfiguration.CONTENT_PLACEHOLDER)
+        </div>
+    </div>
+</section>
 ```
