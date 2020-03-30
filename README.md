@@ -3,6 +3,7 @@
 ## Documentation for Kentico Form Widget Configuration
 [View Here](https://docs.kentico.com/k12/developing-websites/form-builder-development/customizing-the-form-widget#CustomizingtheFormwidget-Examples)
 
+## ~/App_Code/FormWidgetMarkupInjection.cs
 
 ```csharp
 using Kentico.FormExtensions;
@@ -26,7 +27,7 @@ public class FormWidgetMarkupInjection
 }
 ```
 
-# ~/Views/Shared/Forms/<FormName>.cshtml
+# ~/Views/Shared/Forms/_(ParialViewByFormName).cshtml
 
 ```csharp
 @using Kentico.Forms.Web.Mvc.Widgets
